@@ -28,7 +28,10 @@ const ProductViewer = () => {
 
       <div className="controls">
         <p className="info">
-          {`MacBook Pro | Available in 14" & 16" in Space Gray & Dark colors ${color}`}
+          {`MacBook Pro | Available in 14" & 16" in ${color === '#adb5bd' ? 'Silver' : 'Space Gray'}`}
+        </p>
+        <p className="text-[11px] text-neutral-400 mt-2 tracking-wide uppercase">
+          Drag to rotate 360°
         </p>
 
         <div className="flex-center gap-5 mt-5">

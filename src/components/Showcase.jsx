@@ -71,14 +71,14 @@ const Showcase = () => {
       <div className="media">
         <video
           ref={videoRef}
-          src="/videos/game.mp4"
+          src={`${import.meta.env.BASE_URL}videos/game.mp4`}
           loop
           muted
           playsInline
           preload="metadata"
         />
         <div className="mask">
-          <img src="/mask-logo.svg"  />
+          <img src={`${import.meta.env.BASE_URL}mask-logo.svg`}  />
         </div>
       </div>
       <div className="content">

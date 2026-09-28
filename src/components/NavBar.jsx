@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <header className="relative">
       <nav>
-        <img src="/logo.svg" alt="Apple Logo" />
+        <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Apple Logo" />
         <ul>
           {navLinks.map(({ label }) => (
             <li key={label}>
@@ -17,10 +17,10 @@ const NavBar = () => {
         </ul>
         <div className="flex-center gap-4">
           <button type="button" aria-label="Search">
-            <img src="/search.svg" alt="Search" />
+            <img src={`${import.meta.env.BASE_URL}search.svg`} alt="Search" />
           </button>
           <button type="button" aria-label="Cart">
-            <img src="/cart.svg" alt="Cart" />
+            <img src={`${import.meta.env.BASE_URL}cart.svg`} alt="Cart" />
           </button>
           <button
             type="button"

@@ -5,7 +5,7 @@ import { noChangeParts } from '../../constants'
 
 export default function MacbookModel16(props) {
   const { nodes, materials, scene } = useGLTF(
-    '/models/macbook-transformed.glb'
+    `${import.meta.env.BASE_URL}models/macbook-transformed.glb`
   )
 
   const { color, texture } = useMacbookStore()
@@ -146,4 +146,4 @@ export default function MacbookModel16(props) {
   )
 }
 
-useGLTF.preload('/models/macbook-transformed.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}models/macbook-transformed.glb`)

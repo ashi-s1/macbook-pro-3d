@@ -26,11 +26,11 @@ useGSAP(()=>{
   <div className="masonry">
     <div className="left-column">
       <div>
-        <img src="/laptop.png" alt="laptop"/>
+        <img src={`${import.meta.env.BASE_URL}laptop.png`} alt="laptop"/>
         <p> Fly through demanding tasks up to 9.8x faster.</p>
       </div>
       <div>
-        <img src="/sun.png" alt="Sun"/>
+        <img src={`${import.meta.env.BASE_URL}sun.png`} alt="Sun"/>
         <p>A stunning <br/>
         Liquid Retina XDR <br/>
         display.</p>
@@ -40,13 +40,13 @@ useGSAP(()=>{
       <div>
         <div className="apple-gradient">
          
-        <img src="/ai.png" alt="AI"/>
+        <img src={`${import.meta.env.BASE_URL}ai.png`} alt="AI"/>
         <p>Built for <br/>
         <span>Apple Intelligence.</span> </p>
       </div>
       </div>
       <div>
-        <img src="/battery.png" alt="Battery"/>
+        <img src={`${import.meta.env.BASE_URL}battery.png`} alt="Battery"/>
         <p>Up to 
           <span className="green-gradient">{''} 14 more hours{''} </span> battery life.
           <span className="text-dark-100">{''}(Up to 24 hours total.)</span></p>
